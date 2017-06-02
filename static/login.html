@@ -1,0 +1,52 @@
+<!--
+Copyright (C) 2017, Vi Grey
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+-->
+
+<!doctype HTML>
+<html>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/circle-progress.min.js"></script>
+<script src="/js/u2f-api.js"></script>
+<script src="/js/scripts.js" defer></script>
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="icon" href="/layout/favicon.png">
+<title>U2F Exploit Demo</title>
+<div id="body">
+  <div id="filter" class="blue on">
+    <div id="sign">
+      <div class="title">U2F Security Key Authentication</div>
+      <img src="/images/u2f-token.svg" class="u2f">
+      <div class="loader">
+        <img src="/images/failure.svg" class="failure">
+        <img src="/images/success.svg" class="success">
+      </div>
+      <div class="description"></div>
+    </div>
+  </div>
+  <div id="challenge">%C</div>
+</div>
+</html>
